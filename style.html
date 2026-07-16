@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="pf.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="preloader">
+        <div id="kroman-preloader">
+            <div class="kroman-logo-container">
+                <img src="images/image__1_-removebg-preview.png" alt="Kroman Logo" class="kroman-bounce-logo">
+            </div>
+        </div>
+    </div>
+    <header class="bg-primary sticky-top">
+       <nav class="navbar navbar-expand-lg py-2 px-4">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="images/image (1).png" class="rounded-3 my-2" alt="Koroman" width="auto" height="50">
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler border border-2 border-dark" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav align-items-center ms-auto gap-2">
+                        <li class="nav-item">
+                            <a href="#hub-anchor" class="nav-link text-light">Acceuil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab-video" class="nav-link text-light">Vidéo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab-design"  class="nav-link text-light">Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#tab-code" class="nav-link text-light">Code</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="text-light btn rounded-pill bg-dark px-4 bg-opacity-75">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section id="korobg" class="korobg container-fluid text-center py-5 my-5">
+
+            <div class="container justify-content-center">
+                <h1 class="display-1 fw-bold mb-4">Portfolio de Koroman</h1>
+                <p class="h3 text-primary">Monteur Photo, Vidéo & Développeur Web</p>
+                <p class="lead text-dark mb-5">
+                    Hi, Moi c'est Koro<br> Pro en montage vidéo, Expérimenté en graphisme <br> Et Performant en développememt Web
+                </p>
+            </div>
+            <div class="d-flex justify-content-center gap-5 my-5 py-4 container">
+                <a href="#hub-anchor" class="btn btn-outline-primary btn-lg px-4 rounded-pill d-flex align-items-center gap-2">
+                <span>Explorer mes créations</span>
+                </a>
+                <a href="#contact" class="btn btn-outline-primary btn-lg px-4 rounded-pill">Me contacter</a>
+            </div>
+            
+            <div class="row justify-content-center py-4 border-top border-secondary-subtle">
+                <div class="col-4 ">
+                    <div class="fs-2 fw-bold text-dark">50+</div>
+                    <div class="text-secondary">Projets</div>
+                </div>
+                <div class="col-4  border-start border-end border-secondary-subtle">
+                    <div class="fs-2 fw-bold text-dark">3+</div>
+                    <div class="text-secondary">Années <br> d'Expériences</div>
+                </div>
+                <div class="col-4 ">
+                    <div class="fs-2 fw-bold text-dark">∞</div>
+                    <div class="text-secondary">Créativité</div>
+                </div>
+            </div>
+        </section>
+
+        <div id="hub-anchor" style="position: relative; top: -40px;"></div>
+        
+        <div class="hub-creative-section text-center py-5 my-5 ">
+            <span class="text-accent fs-4 fw-semibold tracking-wider small">Auteur:</span>
+            <h2 class="display-4 fw-bold text-white">Mes Mes<span class="text-info">Koroman</span></h2>
+            ...
+        </div>
+        <section id="hub" class="py-5 bg-secondary bg-opacity-50">
+            <div class="container py-5">
+                
+                <div class="text-center mb-5">
+                    <span class="text-accent text-uppercase fw-semibold small border border-dark px-2 rounded-pill">Hub Créatif</span>
+                    <h2 class="display-5 fw-bold mt-1">Mes Créations</h2>
+                    <p class="text-secondary">Sélectionnez un espace pour explorer mes créations</p>
+                </div>
+
+                <div class="container-fluid justify-content-center mb-5 row gap-4" id="hubTabs" role="tablist">
+                    <div class="h-25 w-auto btn btn-outline-dark" role="presentation">
+                        <button class="nav-link active px-4 py-3 d-flex align-items-center" id="video-tab" data-bs-toggle="tab" data-bs-target="#tab-video" role="tab">
+                            <div class="text-start">
+                                <div class="fw-bold">Montage Vidéo</div>
+                                <div class="small text-secondary" >AMV · TikTok · YouTube</div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="nav-item h-25 w-auto btn btn-outline-dark" role="presentation">
+                        <button class="nav-link px-4 py-3 d-flex align-items-center" id="design-tab" data-bs-toggle="tab" data-bs-target="#tab-design" type="button" role="tab">
+                            <div class="text-start">
+                                <div class="fw-bold">Design & Photo</div>
+                                <div class="small text-secondary" >Graphisme · Retouche </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class=" h-25 w-auto btn btn-outline-dark" role="presentation">
+                        <button class="nav-link px-4 py-3 d-flex align-items-center" id="code-tab" data-bs-toggle="tab" data-bs-target="#tab-code" role="tab">
+                            <div class="text-start">
+                                <div class="fw-bold">Informatique</div>
+                                <div class="small text-secondary" >Dev Webs · Projets</div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tab-content mt-5" id="hubTabsContent">
+
+                <div class="tab-pane fade show active" id="tab-video">
+                    <div class="text-center mb-4">
+                    <h3>Montage Vidéo</h3>
+                    <p class="text-secondary">Edits, AMV, contenu vertical pour les réseaux sociaux</p>
+                    </div>
+
+                   <div class="video-grid">
+
+                    <div class="video-col-v row g-3 mb-4 mb-lg-0">
+                        
+                        <div class="col-10 col-sm-6 col-md-4 col-lg-4 mx-auto">
+                        <article class="video-card vertical reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.1s">
+                            <div class="position-relative w-100" style="aspect-ratio: 9 / 16;">
+                            <video src="videos/tiktok_arex.arex05_7627228398011600150.mp4" 
+                                    class="w-100 h-100 object-fit-cover" 
+                                    controls 
+                                    preload="auto">
+                            </video>
+                            <div class="video-badge badge-tiktok position-absolute top-0 end-0 m-3 bg-black text-white px-2 py-1 rounded small" style="z-index: 2;">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </div>
+                            </div>
+                            <div class="video-card-info p-3 text-white">
+                            <h4 class="fs-6 mb-1 text-truncate">Montage Créatif #1</h4>
+                            <span class="video-fmt text-secondary small">Format Vertical</span>
+                            </div>
+                        </article>
+                        </div>
+                        <div class="col-10 col-sm-6 col-md-4 col-lg-4 mx-auto">
+                        <article class="video-card vertical reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.1s">
+                            <div class="position-relative w-100" style="aspect-ratio: 9 / 16;">
+                            <video src="videos/tiktok_arex.arex05_7631540018108058902.mp4" 
+                                    class="w-100 h-100 object-fit-cover" 
+                                    controls 
+                                    preload="auto">
+                            </video>
+                            <div class="video-badge badge-tiktok position-absolute top-0 end-0 m-3 bg-black text-white px-2 py-1 rounded small" style="z-index: 2;">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </div>
+                            </div>
+                            <div class="video-card-info p-3 text-white">
+                            <h4 class="fs-6 mb-1 text-truncate">Montage Créatif #1</h4>
+                            <span class="video-fmt text-secondary small">Format Vertical</span>
+                            </div>
+                        </article>
+                        </div>
+                        <div class="col-10 col-sm-6 col-md-4 col-lg-4 mx-auto">
+                        <article class="video-card vertical reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.1s">
+                            <div class="position-relative w-100" style="aspect-ratio: 9 / 16;">
+                            <video src="videos/tiktok_arex.arex05_7633892670863166742.mp4" 
+                                    class="w-100 h-100 object-fit-cover" 
+                                    controls 
+                                    preload="auto">
+                            </video>
+                            <div class="video-badge badge-tiktok position-absolute top-0 end-0 m-3 bg-black text-white px-2 py-1 rounded small" style="z-index: 2;">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </div>
+                            </div>
+                            <div class="video-card-info p-3 text-white">
+                            <h4 class="fs-6 mb-1 text-truncate">Montage Créatif #1</h4>
+                            <span class="video-fmt text-secondary small">Format Vertical</span>
+                            </div>
+                        </article>
+                        </div>
+                        <div class="col-10 col-sm-6 col-md-4 col-lg-6 mx-auto my-lg-3 my-md-3">
+                        <article class="video-card vertical reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.1s">
+                            <div class="position-relative w-100" style="aspect-ratio: 9 / 16;">
+                            <video src="videos/tiktok_arex.arex05_7635736958307732758.mp4" 
+                                    class="w-100 h-100 object-fit-cover" 
+                                    controls 
+                                    preload="auto">
+                            </video>
+                            <div class="video-badge badge-tiktok position-absolute top-0 end-0 m-3 bg-black text-white px-2 py-1 rounded small" style="z-index: 2;">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </div>
+                            </div>
+                            <div class="video-card-info p-3 text-white">
+                            <h4 class="fs-6 mb-1 text-truncate">Montage Créatif #1</h4>
+                            <span class="video-fmt text-secondary small">Format Vertical</span>
+                            </div>
+                        </article>
+                        </div>
+
+                        <div class="col-md-12 col-lg-6 w-lg-100 mx-auto my-md-auto">
+                        <div class="row-sm-6 row-md-4 my-sm-3">
+                        <article class="mb-lg-5 video-card vertical reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.3s">
+                            <div class="position-relative w-100" style="aspect-ratio: 4 / 3;">
+                            <video src="videos/E8494498-9152-4af0-BBCC-DD961A6EFF73_video.mp4" 
+                                    class="w-100 h-100 object-fit-cover" 
+                                    controls 
+                                    preload="metadata">
+                            </video>
+                            <div class="video-badge badge-tiktok position-absolute top-0 end-0 m-3 bg-black text-white px-2 py-1 rounded small" style="z-index: 2;">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </div>
+                            </div>
+                            <div class="video-card-info p-3 text-white">
+                            <h4 class="fs-6 mb-1 text-truncate">Edit Dynamique #2</h4>
+                            <span class="video-fmt text-secondary small">Format Vertical</span>
+                            </div>
+                        </article>
+                        </div>
+                        
+                        <div class="row-sm-6 row-md-4 my-sm-3">
+                        <article class="mt-lg-5 video-card vertical reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.3s">
+                            <div class="position-relative w-100" style="aspect-ratio: 4 / 3;">
+                            <video src="videos/WhatsApp Video 2026-07-05 at 17.18.26.mp4" 
+                                    class="w-100 h-100 object-fit-cover" 
+                                    controls 
+                                    preload="metadata">
+                            </video>
+                            <div class="video-badge badge-tiktok position-absolute top-0 end-0 m-3 bg-black text-white px-2 py-1 rounded small" style="z-index: 2;">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </div>
+                            </div>
+                            <div class="video-card-info p-3 text-white">
+                            <h4 class="fs-6 mb-1 text-truncate">Edit Dynamique #2</h4>
+                            <span class="video-fmt text-secondary small">Format Vertical</span>
+                            </div>
+                        </article>
+                        </div>
+                        </div>
+
+                    </div><div class="video-col-h row g-3">
+
+                        <div class="col-lg-9 col-md-6 mx-lg-auto">
+                            <article class="video-card horizontal reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.15s">
+                            
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/K41bC0dXKOw" 
+                                        title="AMV — Anime Music Video" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <div class="video-card-info p-3 text-white">
+                                <h4 class="fs-5 mb-1 text-truncate">AMV — Anime Music Video</h4>
+                                <span class="video-fmt text-secondary small">Format Horizontal · YouTube</span>
+                            </div>
+                            </article>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <article class="video-card horizontal reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.15s">
+                            
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/apkiW-UDGBQ" 
+                                        title="AMV — Anime Music Video" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <div class="video-card-info p-3 text-white">
+                                <h4 class="fs-5 mb-1 text-truncate">AMV — Anime Music Video</h4>
+                                <span class="video-fmt text-secondary small">Format Horizontal · YouTube</span>
+                            </div>
+                            </article>
+                        </div>
+                        
+                        <div class="col-12 col-md-6">
+                            <article class="video-card horizontal reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.15s">
+                            
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/iHWOlnWnTY8" 
+                                        title="AMV — Anime Music Video" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <div class="video-card-info p-3 text-white">
+                                <h4 class="fs-5 mb-1 text-truncate">AMV — Anime Music Video</h4>
+                                <span class="video-fmt text-secondary small">Format Horizontal · YouTube</span>
+                            </div>
+                            </article>
+                        </div>
+                        <div class="col-lg-8 mx-lg-auto col-md-6">
+                            <article class="video-card horizontal reveal-card border-0 shadow overflow-hidden h-100 bg-dark" style="--delay:.15s">
+                            
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/_eIL7XqR29A" 
+                                        title="AMV — Anime Music Video" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <div class="video-card-info p-3 text-white">
+                                <h4 class="fs-5 mb-1 text-truncate">AMV — Anime Music Video</h4>
+                                <span class="video-fmt text-secondary small">Format Horizontal · YouTube</span>
+                            </div>
+                            </article>
+                        </div>
+                        
+
+                        
+
+                    </div></div>
+                    </div>
+
+
+                <div class="tab-pane fade" id="tab-design" role="tabpanel">
+                    <div class="text-center mb-5">
+    <h3>Design & Graphisme</h3>
+    <p class="text-secondary">Créations visuelles, retouche photo, identités graphiques</p>
+</div>
+
+<div class="container">
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-lg-8 mx-auto mb-5 text-center">
+            <div id="carouselThumbnails" class="carousel slide shadow rounded overflow-hidden mb-3" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselThumbnails" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselThumbnails" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselThumbnails" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselThumbnails" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="w-auto overflow-hidden" style="height: auto;">
+                            <img src="images/Amv.png" class="w-100 h-100 object-fit-cover" alt="Miniature AMV" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Choc des Sommets</h5>
+                            <p>Face-à-face graphique entre les deux figures légendaires de Jujutsu Kaisen qui redéfinissent les règles du pouvoir.<br><em class="lead border border-1 bordre-light rounded  px-2">Miniature Youtube</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="w-auto overflow-hidden" style="height: auto;">
+                            <img src="images/gabimaru.png" class="w-100 h-100 object-fit-cover" alt="Gabimaru" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Focus : Gabimaru</h5>
+                            <p>Une composition percutante, capturant toute la froideur et la détermination du plus redoutable des ninjas.<br><em class="lead border border-1 bordre-light rounded  px-2">Miniature Youtube</em></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="w-auto overflow-hidden" style="height: auto;">
+                            <img src="images/LA HEUSS.png" class="w-100 h-100 object-fit-cover" alt="La Heuss" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>La Heuss| AMV</h5>
+                            <p>Une ambiance explosive portée par un montage dynamique. <br><em class="lead border border-1 bordre-light rounded  px-2">Miniature Youtube</em></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="w-auto overflow-hidden" style="height: auto;">
+                            <img src="images/Koroman.png" class="w-100 h-100 object-fit-cover" alt="Autre création" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>KOROMAN</h5>
+                            <p>Gaming • Créativité • Passion <br><em class="lead border border-1 bordre-light rounded  px-2">Bannière</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselThumbnails" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselThumbnails" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h4 class="lead fw-bold text-center text-info">Miniatures & Bannières</h4>
+        </div>
+
+
+        <div class="col-12 col-md-6 text-center">
+            <div id="carouselMatches" class="carousel slide shadow rounded overflow-hidden mb-3" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMatches" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselMatches" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselMatches" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="w-auto overflow-hidden">
+                            <img src="images/Affiche Match de foot LSK vs CME.png" class="w-100 h-100 object-fit-cover" alt="Affiche LSK vs CME" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Face-à-Face Amical</h5>
+                            <p>Les représentants de l'École Militaire et du Lycée Scientifique de Kara s'apprêtent à s'affronter pour une rencontre de football déterminante.<br><em class="lead border border-1 bordre-light rounded  px-2">Affiche</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="w-auto overflow-hidden" style="height: auto;">
+                            <img src="images/FOOTBALL MATCH (1).png" class="w-100 h-100 object-fit-cover" alt="Football Match" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>FJour de Match</h5>
+                            <p>Un ballon de football posé au centre du terrain, prêt pour le coup d'envoi d'une rivalité sportive passionnante.<br><em class="lead border border-1 bordre-light rounded  px-2">Affiche</em></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="w-auto overflow-hidden" style="height: auto;">
+                            <img src="images/Score Final.png" class="w-100 h-100 object-fit-cover" alt="Score Final" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Final Score</h5>
+                            <p>Trois buts. Zéro concession.<br><em class="lead border border-1 bordre-light rounded  px-2">Affiche</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMatches" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMatches" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h4 class="lead fw-bold text-center text-info">Affiches Matchs</h4>
+        </div>
+
+        <div class="col-12 col-md-6 text-center">
+            <div id="carouselEvents" class="carousel slide shadow rounded overflow-hidden mb-3" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselEvents" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselEvents" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselEvents" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="w-auto overflow-hidden" style="height: auto;">
+                            <img src="images/Evènement3.png" class="w-100 h-100 object-fit-cover" alt="Affiche évènement" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>La Scène s'Enflamme</h5>
+                            <p>Une foule en délire sous les projecteurs d'un grand concert de fin d'année, célébrant la liberté retrouvée juste après les examens.<br><em class="lead border border-1 bordre-light rounded  px-2">Affiche</em></p>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="w-auto overflow-hidden" style="height: auto;">
+                            <img src="images/Vision (1).png" class="w-100 h-100 object-fit-cover" alt="Vision" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>Vision</h5>
+                            <p>Un aperçu visuel ultra-complet des activités qui vous attendent juste après les examens, du sport aux tournois de jeux vidéo en passant par la cuisine.<br><em class="lead border border-1 bordre-light rounded  px-2">Affiche</em></p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="w-auto overflow-hidden" style="height: auto;">
+                            <img src="images/Affiche Event EPL (3).png" class="w-100 h-100 object-fit-cover" alt="Détails évènement" style="cursor: zoom-in;" onclick="openFullscreen(this.src)">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2">
+                            <h5>DFestivités EPL 2026</h5>
+                            <p>Une affiche au design moderne et dynamique présentant le programme complet des festivités de fin d'année <br><em class="lead border border-1 bordre-light rounded  px-2">Affiche</em></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEvents" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEvents" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <h4 class="lead fw-bold text-center text-info">Affiches d'Évènements</h4>
+        </div>
+
+    </div>
+</div>
+
+<div id="fullscreenOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0, 0, 0, 0.9); z-index: 9999; justify-content: center; align-items: center; cursor: zoom-out;" onclick="closeFullscreen()">
+    <img id="fullscreenImage" src="" alt="Image en plein écran" style="max-width: 95%; max-height: 95%; object-fit: contain;">
+</div>
+
+<script>
+    function openFullscreen(src) {
+        document.getElementById('fullscreenImage').src = src;
+        document.getElementById('fullscreenOverlay').style.display = 'flex';
+    }
+
+    function closeFullscreen() {
+        document.getElementById('fullscreenOverlay').style.display = 'none';
+    }
+</script>
+
+               <!--<div class="tab-pane fade" id="tab-code" role="tabpanel">--> 
+                    <div class="text-center mb-5">
+                    <h3>Informatique & <span class="text-accent">Développement</span></h3>
+                    <p class="text-secondary">Langages, outils et projets de développement web & logiciel</p>
+                    </div>
+
+                    <div class="row g-4 mb-5">
+                    <div class="col-md-4">
+                        <div class="card p-4 h-100">
+                        <h5 class="mb-4 d-flex align-items-center gap-2"><i class="fas fa-code text-accent"></i> Langages</h5>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small mb-1"><span>HTML / CSS</span><span>90%</span></div>
+                            <div class="progress" style="height: 6px;"><div class="progress-bar bg-info" style="width: 90%"></div></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small mb-1"><span>JavaScript</span><span>75%</span></div>
+                            <div class="progress" style="height: 6px;"><div class="progress-bar bg-info" style="width: 75%"></div></div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between small mb-1"><span>Python</span><span>65%</span></div>
+                            <div class="progress" style="height: 6px;"><div class="progress-bar bg-info" style="width: 65%"></div></div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card p-4 h-100">
+                        <h5 class="mb-4 d-flex align-items-center gap-2"><i class="fas fa-layer-group text-accent"></i> Frameworks</h5>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small mb-1"><span>React.js</span><span>70%</span></div>
+                            <div class="progress" style="height: 6px;"><div class="progress-bar bg-info" style="width: 70%"></div></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small mb-1"><span>Node.js</span><span>60%</span></div>
+                            <div class="progress" style="height: 6px;"><div class="progress-bar bg-info" style="width: 60%"></div></div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between small mb-1"><span>Git / GitHub</span><span>80%</span></div>
+                            <div class="progress" style="height: 6px;"><div class="progress-bar bg-info" style="width: 80%"></div></div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card p-4 h-100">
+                        <h5 class="mb-4 d-flex align-items-center gap-2"><i class="fas fa-palette text-accent"></i> Outils</h5>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small mb-1"><span>Premiere Pro</span><span>85%</span></div>
+                            <div class="progress" style="height: 6px;"><div class="progress-bar bg-info" style="width: 85%"></div></div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between small mb-1"><span>Photoshop</span><span>80%</span></div>
+                            <div class="progress" style="height: 6px;"><div class="progress-bar bg-info" style="width: 80%"></div></div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between small mb-1"><span>After Effects</span><span>70%</span></div>
+                            <div class="progress" style="height: 6px;"><div class="progress-bar bg-info" style="width: 70%"></div></div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <h4 class="h5 mb-4 text-center">Projets <span class="text-accent">GitHub</span></h4>
+                    <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card p-4 h-100">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <i class="fas fa-globe-americas fs-3 text-accent"></i>
+                            <div>
+                            <a href="#" class="text-white me-2"><i class="fab fa-github"></i></a>
+                            <a href="#" class="text-white"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h5>Portfolio v2</h5>
+                        <p class="text-secondary small">Site web personnel avec animations CSS avancées et navigation fluide mono-page.</p>
+                        <div class="d-flex gap-2 mt-auto pt-2">
+                            <span class="badge bg-secondary-subtle text-secondary border">HTML</span>
+                            <span class="badge bg-secondary-subtle text-secondary border">CSS</span>
+                            <span class="badge bg-secondary-subtle text-secondary border">JS</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card p-4 h-100">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <i class="fab fa-discord fs-3 text-accent"></i>
+                            <div>
+                            <a href="#" class="text-white me-2"><i class="fab fa-github"></i></a>
+                            <a href="#" class="text-white"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <h5>Bot Discord</h5>
+                        <p class="text-secondary small">Bot multi-fonctions avec commandes slash, modération auto et gestion de rôles.</p>
+                        <div class="d-flex gap-2 mt-auto pt-2">
+                            <span class="badge bg-secondary-subtle text-secondary border">Python</span>
+                            <span class="badge bg-secondary-subtle text-secondary border">Node.js</span>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="py-5 container my-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                <span class="h1 text-center">Contact</span>
+                <h2 class="display-6 fw-bold mt-1 mb-3 text-primary">Travaillons Ensemble</h2>
+                <p class="text-secondary mb-4">Un projet en tête ? Une collaboration à proposer ? N'hésitez pas à me contacter.</p>
+                
+                <div class="d-flex flex-column gap-3">
+                    <a href="mailto:koroprocontact@gmail.com" class="text-decoration-none text-secondary d-flex align-items-center gap-3">
+                    <span class="btn btn-outline-primary rounded-circle"><i class="fas fa-envelope"></i></span>
+                    <span>koroprocontact@gmail.com</span>
+                    </a>
+                    <a href="https://discord.gg/aVsSKgYQ" class="text-decoration-none text-secondary d-flex align-items-center gap-3">
+                    <span class="btn btn-outline-primary rounded-circle"><i class="fab fa-discord"></i></span>
+                    <span>Discord — Koro9639</span>
+                    </a>
+                    <a href="#" class="text-decoration-none text-secondary d-flex align-items-center gap-3">
+                    <span class="btn btn-outline-primary rounded-circle"><i class="fab fa-github"></i></span>
+                    <span>github.com/votre-profil</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+            <div class="card p-4 p-md-5 shadow-lg">
+                <form method="post" action="pf.php">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="text" class="form-control bg-secondary bg-opacity-50 -secondary" id="f-name" name="f-name" placeholder="Nom" required>
+                        <label for="f-name">Votre nom</label>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control bg-secondary bg-opacity-50 border-secondary " id="f-email" name="f-email" placeholder="Email" required>
+                        <label for="f-email">Votre email</label>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                    <div class="form-floating">
+                        <input type="text" class="form-control bg-secondary bg-opacity-50 border-secondary " id="f-subject" name="f-subject" placeholder="Sujet" required>
+                        <label for="f-subject">Sujet</label>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                    <div class="form-floating">
+                        <textarea class="form-control bg-secondary bg-opacity-50 border-secondary " placeholder="Message" id="f-message" name="f-message" style="height: 150px" required></textarea>
+                        <label for="f-message">Votre message</label>
+                    </div>
+                    </div>
+                    <div class="col-12">
+                    <button type="submit" class="btn btn-accent btn-outline-primary w-100 py-3 rounded-pill d-flex align-items-center justify-content-center gap-2">
+                        <span>Envoyer le message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    </div>
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </section>
+
+    </main>
+    <footer class="py-4 border-top border-secondary-subtle text-center bg-primary bg-opacity-75">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+        <a class="navbar-brand" href="#">
+                    <img src="images/image (1).png" alt="Koroman" width="auto" height="60" class="rounded-3">
+        </a>
+        <p class="small text-white mb-0">© 2025 — Portfolio Créatif. Fait avec <i class="fas fa-heart text-danger"></i> & ☕</p>
+        <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-white fs-5"><i class="fab fa-discord"></i></a>
+        </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+
+
+  // On récupère tous les boutons d'onglets du portfolio
+  const tabButtons = document.querySelectorAll('[data-bs-toggle="tab"]');
+  
+  tabButtons.forEach(button => {
+    button.addEventListener('shown.bs.tab', function () {
+      // Dès qu'un onglet est affiché, on fait défiler la page jusqu'au Hub
+      const targetSection = document.getElementById('hub'); // Ou 'hub-anchor' selon ton ID exact
+      
+      if (targetSection) {
+        window.scrollTo({
+          top: targetSection.offsetTop - 90, // Le -90 évite que la navbar sticky ne cache le titre
+          behavior: 'smooth' // Pour un défilement fluide et élégant
+        });
+      }
+    });
+  });
+</script>
+
+<script>
+    // Bloque le défilement au démarrage
+    document.body.classList.add('preloader-active');
+    
+    // Réactive le défilement du portfolio une fois l'animation terminée (2.8s au total)
+    setTimeout(function() {
+        document.body.classList.remove('preloader-active');
+        // Supprime complètement l'élément du DOM pour libérer les performances
+        var preloader = document.getElementById('kroman-preloader');
+        if(preloader) {
+            preloader.remove();
+        }
+    }, 2800); 
+</script>
+
+</body>
+</html>

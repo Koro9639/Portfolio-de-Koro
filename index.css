@@ -1,0 +1,108 @@
+#korobg {
+    position: relative; /* Indispensable pour caler l'arrière-plan par rapport à cette section */
+    overflow: hidden;    /* Masque le surplus de l'image causé par le "scale(1.05)" */
+    z-index: 1;         /* Crée un contexte d'empilement */
+}
+
+/* On crée un calque d'arrière-plan uniquement pour l'image et le flou */
+#korobg::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    
+    /* On déplace tes propriétés d'image et de flou ICI */
+    background-image: url(images/Gemini_Generated_Image_.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(7px); 
+    transform: scale(1.05);
+    opacity: 40%;
+    
+    z-index: -1; /* Place l'image floue DERRIÈRE le contenu de la section */
+}
+
+
+/* Style de l'écran de chargement bleu */
+#kroman-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #54b3e7; /* Le bleu exact de ton arrière-plan d'entrée */
+    z-index: 99999; /* Reste au-dessus de tout le contenu Bootstrap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Lance l'animation de sortie vers le haut après 2.2 secondes */
+    animation: slideUpOut 0.6s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    animation-delay: 2.2s;
+}
+
+/* Conteneur pour limiter et centrer la taille du logo */
+.kroman-logo-container {
+    width: 200px; /* Ajuste la taille selon tes préférences */
+    max-width: 50%;
+}
+
+.kroman-logo-container img {
+    width: 100%;
+    height: auto;
+    transform: scale(0); /* Démarre invisible/petit */
+    /* Animation du logo : Apparition pop + effet de pulsation */
+    animation: logoPop 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* --- LES ANIMATIONS KEYFRAMES --- */
+
+/* 1. Animation pop & pulsation du logo */
+@keyframes logoPop {
+    0% {
+        transform: scale(0) rotate(-10deg);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(1.1) rotate(0deg);
+        opacity: 1;
+    }
+    40% {
+        transform: scale(0.95);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    60% {
+        transform: scale(1);
+    }
+    /* Effet léger de pulsation finale avant le slide */
+    80% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* 2. Animation glissement vers le haut de l'écran complet */
+@keyframes slideUpOut {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+        visibility: hidden;
+    }
+}
+
+/* Optionnel : Bloquer le défilement de la page pendant l'animation */
+body {
+    overflow-x: hidden;
+}
+body.preloader-active {
+    overflow: hidden;
+}
